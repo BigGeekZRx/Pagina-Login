@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/Background.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#sandCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; 
+    z-index: 1;
+}
+
+.main{
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.09);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px #00000056;
+    width: 350px;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.card-login h1{
+    font-family: "Playwrite GB S", sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.text{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.text input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 10px;
+    background-color: #964b00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Playwrite GB S", sans-serif;
+}
+
+.btn-login:hover{
+    background-color: #1f1204;
+}
+
+.text input:focus{
+    border-color: #1f1204;
+    outline: none;
+}
